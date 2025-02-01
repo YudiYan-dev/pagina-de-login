@@ -1,0 +1,129 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+IN:wght@100..400&family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding: 0px;
+    margin: 0px;
+}
+
+:root {
+/* Paleta de cores: Site: https://paletadecores.com/paleta/aab3ab/c4cbb7/ebefc9/eee0b7/e8caaf/*/   
+    --cinza-esverdeado: #aab3ab;
+    --verde-pastel: #c4cbb7;
+    --verde-lima-suave: #efdec9;
+    --amarelo-areia: #f0cfb1;
+    --bege-pessego: #e8caaf;
+}
+
+body {
+    background: white url(../imagens/cellphone.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 100vw;
+    height: 100vh;
+}
+
+main {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+}
+
+section#form {
+    background-color: rgba(204, 204, 204, 0.315);
+    width: 300px;
+    height: 350px;
+    border-radius: 10px;
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.712);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);    
+}
+
+.form-text-titulo {
+    color: white;
+    text-shadow: 0px 0px 7px black;
+    font-family: "Poppins", serif;
+    font-size: 1.6em;
+    font-weight: 700;
+    text-align: center;
+    margin: 10px;
+}
+
+.form-text-paragrafo {
+    color: white;
+    text-shadow: 0px 0px 5px black;
+    font-family: "Poppins", serif;
+    font-size: 0.8em;
+    font-weight: 300;
+    text-align: center;
+    margin: 10px 10px 15px 10px;
+}
+
+div.form > label {
+    display: none;
+}
+
+div.form > span {
+    color: black;
+    font-weight: 2em;
+    height: 40px;
+    padding: 1px 4px; 
+    transform: translateY(4px);
+}
+
+div.form > span#versenha {
+    transform: translateY(5px);
+    cursor: pointer;
+}
+
+div.form {
+    display: block;
+    margin: 5px;
+}
+
+div.form > input {
+    font-size: 1em;
+    width: 80%;
+    height: 25px;
+    border: 0px;
+    border-radius: 3px;
+    padding: 3px;
+}
+
+div.form > input:focus-within {
+    background-color: var(--amarelo-areia);
+}
+
+.form > input[type=submit] {
+    display: block;
+    font-size: 1em;
+    font-weight: 500;
+    width: 100%;
+    height: 40px;
+    background-color: var(--bege-pessego);
+    color: #1b1814;
+    border: 1px solid black;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.form > input[type=submit]:hover {
+    background-color: #ffd2aba6;
+}
+
+.form > a {
+    font-weight: 500;
+    color: #000000;
+    padding: 10px;
+}
+
+.form > a:hover {
+    font-weight: 500;
+    color: #240086;
+    padding: 10px;
+}

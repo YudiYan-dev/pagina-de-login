@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Login</title>
+    <link rel="stylesheet" href="estilos/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+</head>
+<body>
+    <main>
+        <section id="form">
+                <div class="form-text">
+                    <h1 class="form-text-titulo">Login</h1>
+                    <p class="form-text-paragrafo">Bem-Vindo(a) novamente! Acesse sua conta para utilizar os nossos recursos.</p>
+                </div>
+                <div class="form-formulario">
+                    <form action="login.php" method="post" autocomplete="on">
+                        <div class="form">
+                            <span class="material-symbols-outlined">person</span>
+                            <input type="email" name="email" id="iemail" required maxlength="30" autocomplete="email" placeholder="Digite seu e-mail">
+                            <label for="iemail">Email</label>
+                        </div>
+                        <div class="form">
+                            <span class="material-symbols-outlined" onclick="verSenha()" id="versenha">visibility</span>
+                            <input type="password" name="senha" id="isenha" required minlength="8" maxlength="20" autocomplete="current-password" placeholder="Digite sua senha">     
+                            <label for="isenha">Senha</label>
+                            <div class="form">
+                                <input type="submit" value="Entrar">
+                                <a href="#">Esqueci a senha</a>
+                            </div>        
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>  
+<script>
+    function verSenha() {
+        var senha = document.getElementById("isenha");
+        var botao = document.getElementById("versenha");
+
+        if (senha.type === "password") {
+            senha.type = "text"; 
+            botao.innerHTML = "visibility_off"; 
+        } else {
+            senha.type = "password";
+            botao.innerHTML = "visibility"; 
+        }
+    }
+</script>
+</body>
+</html>
