@@ -1,6 +1,9 @@
 @charset "UTF-8";
 
-@media screen and (min-width: 700px) and (max-width: 1280px) {
+
+/*Media Query: Tablet*/
+
+@media screen and (min-width: 650px) and (max-width: 1280px) {
     body {
         background-image: url(../imagens/tablet-bg.jpg);
     }
@@ -8,7 +11,7 @@
     section#form {
         background-color: rgba(0, 0, 0, 0.452);
         width: 400px;
-        height: 450px;
+        height: 400px;
     }
 
     .form-text-titulo {
@@ -19,5 +22,34 @@
     .form-text-paragrafo {
         font-size: 0.9em;
         margin: 12px 12px 15px 12px;
+    }
+
+    div.form > span {
+        color: rgb(255, 255, 255);
+        font-weight: 3em;
+        height: 45px;
+        padding: 2px 6px; 
+    }
+
+    div.form > input {
+        width: 84%;
+        height: 30px;
+    }
+
+    div.form > input:focus-within {
+        background-color: rgb(255, 244, 230);
+    }
+
+    .form > input[type=submit] {
+        transform: translate(20px);
+        width: 90%;
+        margin: 10px 0px;
+    }
+
+    .form > a {
+        font-size: 1.08em;
+        font-weight: 500;
+        color: #cfcfcf;
+        padding-left: 17px;
     }
 }

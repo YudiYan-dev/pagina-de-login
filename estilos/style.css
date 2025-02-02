@@ -41,7 +41,8 @@ section#form {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);    
+    transform: translate(-50%, -50%);   
+    transition: all 0.5s; 
 }
 
 .form-text-titulo {
@@ -123,7 +124,5 @@ div.form > input:focus-within {
 }
 
 .form > a:hover {
-    font-weight: 500;
     color: #240086;
-    padding: 10px;
 }
