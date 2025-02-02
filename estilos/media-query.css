@@ -1,0 +1,23 @@
+@charset "UTF-8";
+
+@media screen and (min-width: 700px) and (max-width: 1280px) {
+    body {
+        background-image: url(../imagens/tablet-bg.jpg);
+    }
+
+    section#form {
+        background-color: rgba(0, 0, 0, 0.452);
+        width: 400px;
+        height: 450px;
+    }
+
+    .form-text-titulo {
+        font-size: 1.8em;
+        margin: 12px;
+    }
+    
+    .form-text-paragrafo {
+        font-size: 0.9em;
+        margin: 12px 12px 15px 12px;
+    }
+}
