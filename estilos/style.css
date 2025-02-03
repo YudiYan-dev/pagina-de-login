@@ -27,9 +27,11 @@ body {
 }
 
 main {
-    position: relative;
     width: 100vw;
     height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 section#form {
@@ -38,10 +40,6 @@ section#form {
     height: 350px;
     border-radius: 10px;
     box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.712);
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);   
     transition: all 0.5s; 
 }
 
